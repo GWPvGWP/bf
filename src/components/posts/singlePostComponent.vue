@@ -177,7 +177,7 @@ export default defineComponent({
               v-if="curpost.location"
               allowfullscreen
               referrerpolicy="no-referrer-when-downgrade"
-              :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyDPvCQ4RXgvhbboTmKh2qLnfY50aJxcD0E&q=${this.curpost.location.latitude}, ${this.curpost.location.longitude}`">
+              :src="`https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=${this.curpost.location.latitude}, ${this.curpost.location.longitude}+(map)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed`">
             </iframe>
           </template>
         </PopupModal>
